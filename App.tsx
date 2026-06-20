@@ -79,12 +79,12 @@ const LicenseGate: React.FC<{ onGranted: () => void }> = ({ onGranted }) => {
           </div>
         </div>
         <h1 className="text-3xl font-serif font-bold text-[#A4823F] mb-2">Private Studio Access</h1>
-        <p className="text-gray-500 mb-8">Enter your VIP license code to unlock the RADD Virtual Try-On Studio.</p>
+        <p className="text-gray-500 mb-8">Enter your VIP password to unlock the RADD Virtual Try-On Studio.</p>
         
         <form onSubmit={handleSubmit} className="space-y-4">
           <input 
             type="text" 
-            placeholder="License Key" 
+            placeholder="Enter Password" 
             value={input}
             onChange={(e) => setInput(e.target.value)}
             className={`w-full px-6 py-4 rounded-xl border-2 transition-all outline-none text-center tracking-widest font-semibold uppercase ${error ? 'border-red-500 bg-red-50' : 'border-gray-200 focus:border-[#A4823F]'}`}
